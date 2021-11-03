@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-
 import axios from 'axios';
+
+import User from './components/User';
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -16,7 +17,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Hello, world!</h1>
+      <h1>CaseyBook v.1!</h1>
+      {users.map(user => <User user={user} key={user.login.uuid} />)}
     </div>
   );
 }
