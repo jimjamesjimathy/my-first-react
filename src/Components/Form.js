@@ -31,6 +31,7 @@ const Form = (props) => {
           <input 
             type='text'
             name='first_name'
+            required='required'
             value={first_name}
             onChange={onChange}
           />
@@ -41,6 +42,7 @@ const Form = (props) => {
           <input 
             type='text'
             name='last_name'
+            required='required'
             value={last_name}
             onChange={onChange}
           />
@@ -51,6 +53,7 @@ const Form = (props) => {
           <input 
             type='email'
             name='email'
+            required='required'
             value={email}
             onChange={onChange}
           />
@@ -61,6 +64,7 @@ const Form = (props) => {
           <input 
             type='password'
             name='password'
+            required='required'
             value={password}
             onChange={onChange}
           />
@@ -72,6 +76,7 @@ const Form = (props) => {
           <input 
             type='checkbox'
             name='tos'
+            required='required'
             checked={tos}
             onChange={onChange}
           />
