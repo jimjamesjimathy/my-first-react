@@ -1,11 +1,95 @@
+/* CSS RESET */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+
+/* Color scheme variables */
+:root {
+  --burlywood: #FBF6EF;
+  --bistre: #473328;
+  --yellow: #CAAF02;
+  --gunMetal: #172B3A;
+  --gunMetalOP: rgba(23, 43, 58, 0.5);
+  --steelBlue: #4681AF;
+  --beauBlue: rgba(240, 245, 249, 0.8);
+  --infoBg: rgba(71, 51, 40, 0.7);
+}
+/* General styling */
+html {
+    font-size: 62.5%;
+}
+body {
+  background-color: skyblue;
+}
+/* Start Styling for Components */
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  margin: 0 auto;
+  margin-top: 5%;
+  width: 75%;
+  height: 66.6vh;
+  text-align: center;
+  background-color: #172B3A;
 }
+.inputs-text-wrap h1{
+  font-size: 5rem;
+  color:#CAAF02
+}
+.inputs-text-wrap h3{
+  color: white;
+  font-size: 3rem;
+}
+.form-flex {
+  height: 100%;
+  font-size: 3rem;
+  color: skyblue;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+}
+.submitted-text {
+  font-size: 3rem;
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 1%;
+  padding: 2%;
+  background-color: #4681AF;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
